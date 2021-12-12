@@ -1,0 +1,35 @@
+<div class="container mt-5">
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal">
+    <i class="fas fa-plus"></i>
+  </button>
+
+  <ul class="mt-3">
+  <% @items.each do |item| %>
+    <li>
+      <%= "#{item.name}" %> <%= "(#{item.quantity})" if item.quantity.present? %>
+      <%= link_to item, remote: true, method: :delete do %>
+        <i class="fas fa-check"></i>
+      <% end %>
+    </li>
+  <% end %>
+  </ul>
+</div>
+
+
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <% @item = Item.new %>
+        <%= simple_form_for @item, method: :post do |f| %>
+          <%= f.input :name %>
+          <%= f.input :quantity %>
+          <%= button_tag class: 'btn btn-primary', type: 'submit', data: { dismiss: 'modal' } do %>
+            Add to List
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
