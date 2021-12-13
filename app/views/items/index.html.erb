@@ -6,7 +6,7 @@
 
   <ul class="mt-3">
   <% @items.each do |item| %>
-    <li>
+    <li class="item">
       <%= "#{item.name}" %> <%= "(#{item.quantity})" if item.quantity.present? %>
       <%= link_to item, method: :delete, remote: true do %>
         <i class="fas fa-check"></i>
