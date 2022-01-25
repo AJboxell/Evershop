@@ -42,3 +42,4 @@ yarn-debug.log*
 .DS_Store
 
 /public/service-worker.js
+/app/javascript/service_workers/service_worker.js
