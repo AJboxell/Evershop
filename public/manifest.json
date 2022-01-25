@@ -1,0 +1,21 @@
+{
+  "name": "Evershop",
+  "short_name": "Evershop",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "",
+  "icons": [
+    {
+      "src": "shopping_icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "shopping_icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
