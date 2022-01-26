@@ -11,9 +11,9 @@
 
   <div class="grand-total m-5">Currently
     <% if @alex_spent < 0.00 %>
-      <%= "Alex owes £#{@alex_spent.abs}" %>
+      <%= "Alex owes £#{@alex_spent.abs / 2.00 }" %>
     <% else %>
-      <%= "Becca owes £#{@alex_spent}" %>
+      <%= "Becca owes £#{@alex_spent / 2.00 }" %>
     <% end %>
   </div>
 
