@@ -1,12 +1,18 @@
-.navbar-lewagon {
+.tab {
   justify-content: space-between;
-  background: white;
+  background: $teal;
+  color: white;
+  width: 50%;
+  padding: 4px;
+  font-size: 24px;
+  text-align: center;
+  border: 4px solid $light-gray;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.active {
+  text-decoration: underline;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.tab a, a:visited {
+  color: white;
 }
