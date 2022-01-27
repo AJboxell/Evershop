@@ -11,14 +11,14 @@
 
   <div class="grand-total m-5">Currently
     <% if @alex_spent < 0.00 %>
-      <%= "Alex owes £#{@alex_spent.abs / 2.00 }" %>
+      <%= "Alex owes £#{(@alex_spent.abs / 2.00).round(2) }" %>
     <% else %>
-      <%= "Becca owes £#{@alex_spent / 2.00 }" %>
+      <%= "Becca owes £#{(@alex_spent / 2.00).round(2) }" %>
     <% end %>
   </div>
 
   <ul class="mt-3 ml-5">
-  <% @expenses.each do |expense| %>
+  <% @expenses.first(10).each do |expense| %>
     <li class="expense">
       <%= "#{expense.person} - #{expense.amount}" %> <%= "(#{expense.name})" if expense.name.present? %>
       <%= link_to expense, method: :delete, remote: true do %>

@@ -2,6 +2,7 @@ class ExpensesController < ApplicationController
 
   def index
     @expenses = Expense.all
+    @expenses = @expenses.sort_by { |expense| expense.created_at }.reverse
     @alex_spent = 0.00
     @expenses.each { |expense| expense.person == "Alex" ? @alex_spent += expense.amount : @alex_spent -= expense.amount }
   end
