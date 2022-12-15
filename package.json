@@ -13,6 +13,9 @@
     "turbolinks": "^5.2.0",
     "webpacker-pwa": "^0.1.2"
   },
+  "engines": {
+    "node": "14.15.5"
+  },
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^4.6.0"
