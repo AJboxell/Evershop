@@ -4,3 +4,20 @@
 @import "navbar";
 @import "items";
 @import "expenses";
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 8px;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+hr {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}

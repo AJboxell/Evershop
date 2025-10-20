@@ -1,12 +1,13 @@
 .tab {
   justify-content: space-between;
-  background: $teal;
+  background: $burgundy;
   color: white;
   width: 50%;
   padding: 4px;
   font-size: 24px;
   text-align: center;
   border: 4px solid $light-gray;
+  border-radius: 8px;
 }
 
 .active {

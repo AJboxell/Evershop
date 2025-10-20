@@ -5,11 +5,13 @@
     <div class="tab active">Expenses</div>
   </div>
 
-  <button type="button" class="btn btn-primary ml-5 mt-3" data-toggle="modal" data-target="#expenseModal">
-    <i class="fas fa-plus"></i>
-  </button>
+  <div class="btn-container">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#expenseModal">
+      <i class="fas fa-plus"></i>
+    </button>
+  </div>
 
-  <div class="grand-total m-5">Currently
+  <div class="grand-total m-4">Currently
     <% if @alex_spent < 0.00 %>
       <%= "Alex owes £#{(@alex_spent.abs / 2.00).round(2) }" %>
     <% else %>
