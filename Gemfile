@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.3.4'
+ruby '4.0.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 7.2.2.2'
+gem 'rails', '~> 8.1.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18'
 # Use Puma as the app server
@@ -34,7 +34,7 @@ gem 'simple_form'
 gem 'webpacker-pwa'
 
 group :development, :test do
-  gem 'pry-byebug'
+  # gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
   gem 'rspec-rails'
@@ -56,7 +56,6 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara'
-  gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
