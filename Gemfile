@@ -8,7 +8,7 @@ gem 'rails', '~> 8.1.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18'
 # Use Puma as the app server
-gem 'puma', '~> 6.4.3'
+gem 'puma', '~> 8.0'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -57,7 +57,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
+  gem 'selenium-webdriver'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
